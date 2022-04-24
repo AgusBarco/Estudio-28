@@ -97,6 +97,7 @@ header{
 
 .cabeceraGaleria{
     color: #BBA670;
+    background-image: linear-gradient(#1B2118, #BBA670);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -113,6 +114,7 @@ header{
 
 .cabeceraContacto{
     color: #BBA670;
+    background-image: linear-gradient(#1B2118, #BBA670);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
