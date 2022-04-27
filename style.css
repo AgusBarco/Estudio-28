@@ -9,6 +9,8 @@ a{
     color: #BBA670;
 }
 
+
+
 th{
     color: #BBA670;
 }
@@ -140,16 +142,19 @@ header{
     
 }
 
-.iconos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    list-style: none;
 
+.iconos{
+    background-color: #1B2118;
 }
 
 .iconos li{
     margin: 1rem;
+}
+
+.footer__iconos{
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .ubicacion{
@@ -187,6 +192,23 @@ header{
     background-image: url("imagenes/Fondo\ de\ pantalla.jpg");
     margin: none;
 }
+
+.headerMain{
+    background-color:#BBA670;
+}
+
+.logo_Cabecera{
+    width: 100px;
+}
+.nav-link{
+    font-size: 20px;
+}
+
+
+.footer__logo{   
+    width: 80px;
+}
+
 
 
 @media only screen and (max-width:900px){
