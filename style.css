@@ -15,15 +15,14 @@ th{
     color: #BBA670;
 }
 
-.texto{
+section {
     color: #BBA670;
     font-size: 18px;
     margin: 50px;
     align-items: center;
-    display: grid;
-    grid-template-columns: 3fr 2fr 3fr ;
-    grid-template-columns: 30% 30% 35%;
-    column-gap: 33px;
+    background-color: #1B2118;
+    height: 500px;
+    
     
 }
 
@@ -90,7 +89,7 @@ header{
 .imagenes__cuadro{
     display: flex;
     flex-wrap: wrap;
-    height: 310px;
+    height: 380px;
     width: 300px;
     margin: 10px;
     margin-left: 25px;
@@ -171,14 +170,14 @@ header{
     
 }
 
-.formulario{
+form{
     padding: 100px;
     margin: 70px auto;
     background-color: #1B2118;
     color: #BBA670;
     font-size: 18px;
-    
-}
+    height: 500px;
+    }
 
 .textoGaleria{
     color: #BBA670;
@@ -208,6 +207,20 @@ header{
 .footer__logo{   
     width: 80px;
 }
+.carousel-item{
+    display: flex;
+    flex-wrap: wrap;
+    height: 350px;
+}
+.carrusel__contenedor{
+    margin-top: 80px;
+}
+
+.texto__contenedor{
+   margin-top: 70px;
+}
+
+
 
 
 
@@ -219,7 +232,11 @@ header{
     }
 }
 
-
+@media only screen and (max-width:900px){
+    h1{
+        font-size: 50px;
+    }
+}
 
 
 

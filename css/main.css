@@ -1,0 +1,66 @@
+.fondoContacto {
+  background-image: url("imagenes/Fondo de pantalla.jpg"); }
+
+.cabeceraContacto {
+  color: #BBA670;
+  background-image: linear-gradient(#1B2118, #BBA670);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between; }
+
+.cabeceraContacto h1 {
+  display: inline-block;
+  padding: 30px;
+  margin: auto;
+  align-items: center; }
+
+form {
+  padding: 100px;
+  margin: 70px auto;
+  background-color: #1B2118;
+  color: #BBA670;
+  font-size: 18px;
+  height: 500px; }
+
+.cabeceraGaleria {
+  color: #BBA670;
+  background-image: linear-gradient(#1B2118, #BBA670);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between; }
+  .cabeceraGaleria .cabecera__logo {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+
+.cabeceraGaleria h1 {
+  display: inline-block;
+  padding: 30px;
+  margin: auto;
+  align-items: center; }
+
+.imagenes {
+  background-color: none;
+  display: flex;
+  flex-wrap: wrap; }
+  .imagenes .imagenes__cuadro {
+    display: flex;
+    flex-wrap: wrap;
+    height: 380px;
+    width: 300px;
+    margin: 10px;
+    margin-left: 25px; }
+
+.textoGaleria {
+  color: #BBA670; }
+
+.bgGaleria {
+  background-image: url("imagenes/Fondo de pantalla.jpg");
+  margin: none; }
