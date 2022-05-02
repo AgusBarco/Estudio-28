@@ -143,7 +143,7 @@ header{
 
 
 .iconos{
-    background-color: #1B2118;
+    background-color: #1B2118; 
 }
 
 .iconos li{
@@ -221,14 +221,18 @@ form{
 }
 
 
+@media only screen and (max-width:900px){
+    section{ background-color: white;
 
-
+    }
+}
 
 @media only screen and (max-width:900px){
-    .texto{
+    .texto__contenedor{
         display:flex;
         flex-direction:column;
-        
+        font-size: 15px;
+    
     }
 }
 
