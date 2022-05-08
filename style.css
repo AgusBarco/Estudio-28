@@ -35,7 +35,6 @@ section {
 a{
     text-decoration: none;
 }
-
 h1{
     text-align: center;
     font-size: 55px;
@@ -44,11 +43,6 @@ h1{
     line-height: 50px;
     letter-spacing: 15px;
     flex-wrap: wrap;
-}
-
-h2{
-    text-align: center;
-    font-size: 35px;
 }
 
 th{
@@ -218,6 +212,29 @@ form{
 
 .texto__contenedor{
    margin-top: 70px;
+}
+
+
+@media only screen and (max-width:600px){
+    .imagenes__cuadro {  display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        width: 210px;
+        margin: 10px;
+        margin-left: 20px;
+      }
+
+    
+}
+
+
+@media only screen and (max-width:600px){
+    .footer__index {  display:flex;
+        flex-direction:column;
+        font-size: 15px;
+      }
+
+    
 }
 
 

@@ -1,13 +1,35 @@
+.cabeceraContacto, .cabeceraGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center; }
+
+h1 {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 900;
+  font-family: 'Sarabun', sans-serif;
+  line-height: 50px;
+  letter-spacing: 15px;
+  flex-wrap: wrap; }
+
+.nav-link {
+  font-size: 20px; }
+
+section {
+  color: #BBA670;
+  font-size: 18px;
+  margin: 50px;
+  align-items: center;
+  background-color: #1B2118;
+  height: 500px; }
+
 .fondoContacto {
   background-image: url("imagenes/Fondo de pantalla.jpg"); }
 
 .cabeceraContacto {
   color: #BBA670;
   background-image: linear-gradient(#1B2118, #BBA670);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
   justify-content: space-between; }
 
 .cabeceraContacto h1 {
@@ -27,10 +49,6 @@ form {
 .cabeceraGaleria {
   color: #BBA670;
   background-image: linear-gradient(#1B2118, #BBA670);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
   justify-content: space-between; }
   .cabeceraGaleria .cabecera__logo {
     width: 100px;

@@ -1,1 +1,30 @@
 $color-principal: #BBA670;
+
+
+
+$tamanio-tipografia:(
+titulo: 55px,
+parrafo: 18px,
+botones: 20px,
+);
+
+
+%flex-general {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+}
+
+@mixin flexbox ($padding, $margin, $align-items) {
+    display:inline-block;
+    padding:$padding;
+    margin:$margin;
+    align-items:$align-items;
+}
+
+
+
+    
+

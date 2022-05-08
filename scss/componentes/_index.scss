@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    font-size: map-get($tamanio-tipografia, titulo);
+    font-weight: 900;
+    font-family: 'Sarabun', sans-serif;
+    line-height: 50px;
+    letter-spacing: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-link{
+    font-size: map-get($tamanio-tipografia, botones);
+}
+
+section {
+    color: #BBA670;
+    font-size: map-get($tamanio-tipografia, parrafo);
+    margin: 50px;
+    align-items: center;
+    background-color: #1B2118;
+    height: 500px;
+    
+    
+}

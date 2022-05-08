@@ -5,10 +5,7 @@
 .cabeceraContacto{
     color:$color-principal;
     background-image: linear-gradient(#1B2118,$color-principal);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
+    @extend %flex-general;
     justify-content: space-between;
 }
 .cabeceraContacto h1{
