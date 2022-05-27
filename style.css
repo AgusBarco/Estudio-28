@@ -92,7 +92,7 @@ header{
 
 .cabeceraGaleria{
     color: #BBA670;
-    background-image: linear-gradient(#1B2118, #BBA670);
+    background-color: #1B2118;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -101,6 +101,7 @@ header{
    
 }
 .cabeceraGaleria h1{
+    font-family: 'Sarabun', sans-serif;
     display: inline-block;
     padding: 30px;
     margin:auto;
@@ -109,7 +110,7 @@ header{
 
 .cabeceraContacto{
     color: #BBA670;
-    background-image: linear-gradient(#1B2118, #BBA670);
+    background-color: #1B2118;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -178,12 +179,19 @@ form{
 }
 
 .fondoContacto{
-    background-image: url("imagenes/Fondo\ de\ pantalla.jpg") ;
+    background-image: url("imagenes/FondobgImage.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .bgGaleria{
-    background-image: url("imagenes/Fondo\ de\ pantalla.jpg");
+    background-image: url("imagenes/FondobgImage.jpg");
     margin: none;
+}
+.bgIndex{
+    background-image: url("imagenes/FondobgImage.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .headerMain{
@@ -216,6 +224,11 @@ form{
 }
 
 
+.footer_index{
+    margin-bottom: 0px;
+}
+
+
 
 
 @media only screen and (max-width:600px){
@@ -231,21 +244,7 @@ form{
 }
 
 
-@media only screen and (max-width:600px){
-    .footer__index {  display:flex;
-        flex-direction:column;
-        font-size: 15px;
-      }
 
-    
-}
-
-
-@media only screen and (max-width:900px){
-    section{ background-color: white;
-        }
-    
-}
 
 @media only screen and (max-width:900px){
     .texto__contenedor{
