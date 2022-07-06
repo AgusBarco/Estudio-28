@@ -3,13 +3,13 @@
 console.log("Turno numero: " + i + "Nombre: "+ nombre)}*/
 
 
-let pregunta = parseInt(prompt('que productos quiere llevar?  1-algo 2-algo 3-algo 4-algo, digite 0 para salir'))
+let pregunta = parseInt(prompt('¿Que productos quiere llevar?  1-Cuadro 2-Cuadro 3-Cuadro 4-Cuadro, Digite 0 para salir'))
 let cantidad= 0
 let precioTotal= 0
 
 function suma(n) {
-    precioTotal+=n
-}
+    precioTotal+=n}
+
 while(pregunta != 0){
     switch (pregunta) {
         case 1:
@@ -34,21 +34,17 @@ while(pregunta != 0){
             break;
     
         default:
-            alert('ese producto no esta en la lista')
+            alert('Ese producto no esta en la lista')
             break;
     }
 
-    pregunta = parseInt(prompt('que productos quiere llevar?  1-algo 2-algo 3-algo 4-algo, digite 0 para salir'))
+    pregunta = parseInt(prompt('¿Que productos quiere llevar?  1-Cuadro 2-Cuadro 3-Cuadro 4-Cuadro, Digite 0 para salir'))
 }
 
 function descuento() {
-    if(cantidad == 2){
-      return  precioDescontado = precioTotal - (precioTotal * 0.20)
-    }else if(cantidad == 3){
-        return  precioDescontado = precioTotal - (precioTotal * 0.30)
-    }else{
-        return  precioTotal
-    }
+    if(cantidad == 2){return  precioDescontado = precioTotal - (precioTotal * 0.20)}
+    else if(cantidad == 3){return  precioDescontado = precioTotal - (precioTotal * 0.30)}
+    else{return  precioTotal}
 }
 
 alert('su total es de :$' + descuento())
