@@ -8,8 +8,8 @@ let cantidad= 0
 let precioTotal= 0
 
 function suma(n) {
-    precioTotal+=n}
-
+    precioTotal+=n
+}
 while(pregunta != 0){
     switch (pregunta) {
         case 1:
@@ -18,17 +18,17 @@ while(pregunta != 0){
             suma(producto1)
             break;
         case 2:
-            let producto2 = 2000
+            let producto2 = 1300
             cantidad+=1
             suma(producto2)
             break;
         case 3:
-            let producto3 = 3000
+            let producto3 = 1700
             cantidad+=1
             suma(producto3)
             break;
         case 4:
-            let producto4= 4000
+            let producto4= 1100
             cantidad+=1
             suma(producto4)
             break;
@@ -38,16 +38,18 @@ while(pregunta != 0){
             break;
     }
 
-    pregunta = parseInt(prompt('¿Que productos quiere llevar?  1-Cuadro 2-Cuadro 3-Cuadro 4-Cuadro, Digite 0 para salir'))
+    pregunta = parseInt(prompt('¿Que productos quiere llevar?  1-algo 2-algo 3-algo 4-algo, digite 0 para salir'))
 }
 
 function descuento() {
     if(cantidad == 2){return  precioDescontado = precioTotal - (precioTotal * 0.20)}
-    else if(cantidad == 3){return  precioDescontado = precioTotal - (precioTotal * 0.30)}
-    else{return  precioTotal}
+    else if(cantidad == 3){
+        return  precioDescontado = precioTotal - (precioTotal * 0.30)}
+    else{
+        return  precioTotal}
 }
 
-alert('su total es de :$' + descuento())
+alert('Su total es de :$' + descuento())
     
 
     
