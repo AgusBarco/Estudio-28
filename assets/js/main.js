@@ -88,7 +88,7 @@ agregarAlCarrito()
 
 function agregarAlCarrito() {
 
-    let elijoProducto = parseInt(prompt('ingrese su ID de su producto')) 
+    let elijoProducto = parseInt(prompt('Ingrese el ID de su producto')) 
 
     let productoAgregar = Productos.find((el) => el.id == elijoProducto)
     carritoDeCompras.push(productoAgregar)
