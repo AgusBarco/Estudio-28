@@ -53,7 +53,7 @@ alert('Su total es de :$' + descuento())*/
 
 
 
-let listaProductos=[
+/*let listaProductos=[
     {nombre:"Mapamundi", precio:2500},
     {nombre:"Reloj", precio:1500},
     {nombre:"Cuadro de neon", precio:12000},
@@ -69,9 +69,40 @@ let listaProductos=[
 
 let busquedaUsuario= prompt ("Que buscas?");
 let buscar = listaProductos.find (producto=>producto.nombre == busquedaUsuario);
-console.log(buscar);
+console.log(buscar);*/
 
+let Productos = [
+    {id: 1, nombre: "Mapamundi", tipo: "cuadro", precio: 1200},
+    {id: 2, nombre: "Reloj", tipo: "cuadro", precio: 1100},
+    {id: 3, nombre: "Cuadro de neon", tipo: "neon", precio: 1200},
+    {id: 4, nombre: "Cuadro de neon customizado", precio: 1400},
+    {id: 5, nombre: "Cartel 7x2", tipo: "cartel", precio: 1200},
+    {id: 6, nombre: "Cuadro de neon 2", tipo: "neon", precio: 1500},
+    {id: 7, nombre: "Cuadro de neon 2", tipo: "neon", precio: 500},
+    {id: 8, nombre: "Cuadro de neon 3", tipo: "neon", precio: 500},
+]
 
+let carritoDeCompras = []
+
+agregarAlCarrito()
+
+function agregarAlCarrito() {
+
+    let elijoProducto = parseInt(prompt('ingrese su ID de su producto')) 
+
+    let productoAgregar = Productos.find((el) => el.id == elijoProducto)
+    carritoDeCompras.push(productoAgregar)
+     console.log(carritoDeCompras)
+    actualizarCarrito()
+    
+}
+
+function actualizarCarrito() {
+    console.log('cantidad de productos agregados ' + carritoDeCompras.length)
+    let suma = carritoDeCompras.reduce((acc, el) => acc + el.precio, 0)
+
+    console.log('la suma total de su Carrito es $' + suma)
+}
 
     
 
