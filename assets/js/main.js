@@ -90,8 +90,8 @@ function agregarAlCarrito() {
 
     let elijoProducto = parseInt(prompt('Ingrese el ID de su producto')) 
 
-    let productoAgregar = Productos.find((el) => el.id == elijoProducto)
-    carritoDeCompras.push(productoAgregar)
+    let agregarProducto = Productos.find((el) => el.id == elijoProducto)
+    carritoDeCompras.push(agregarProducto)
      console.log(carritoDeCompras)
     actualizarCarrito()
     
