@@ -72,13 +72,37 @@ let buscar = listaProductos.find (producto=>producto.nombre == busquedaUsuario);
 console.log(buscar);*/
 
 
-let formulario =document.getElementsByClassName(container);
+const Formulario = document.querySelector("#Formulario");
+
+Formulario.addEventListener("Submit",(e) => {
+    e.preventDefault();
+    let texto =document.querySelector("#texto").value;
+    let mail =document.querySelector("#mail").value;
+    let telefono =document.querySelector("#telefono").value;
+
+    console.log(texto,mail,telefono)
+})
+
+
+
+/*INTENTO #2 PARA EVENTOS
+const Formulario = document.getElementById("Formulario");
+
+Formulario.addEventListener("boton", (e) => {
+    e.preventDefault();
+    console.log("Formulario");}
+);*/
+
+
+
+/*INTENTO #1 PARA EVENTOS
+let formulario =document.getElementById(container);
 formulario.addEventListener ("submit",validarFormulario);
 
 boton.onclick = (e)=>{
     e.preventDefault(),
     console.log
-}
+}*/
 
 
 /*let Productos = [
