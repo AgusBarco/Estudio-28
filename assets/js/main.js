@@ -71,7 +71,17 @@ let busquedaUsuario= prompt ("Que buscas?");
 let buscar = listaProductos.find (producto=>producto.nombre == busquedaUsuario);
 console.log(buscar);*/
 
-let Productos = [
+
+let formulario =document.getElementsByClassName(container);
+formulario.addEventListener ("submit",validarFormulario);
+
+boton.onclick = (e)=>{
+    e.preventDefault(),
+    console.log
+}
+
+
+/*let Productos = [
     {id: 1, nombre: "Mapamundi", tipo: "cuadro", precio: 1200},
     {id: 2, nombre: "Reloj", tipo: "cuadro", precio: 1100},
     {id: 3, nombre: "Cuadro de neon", tipo: "neon", precio: 1200},
@@ -102,7 +112,7 @@ function actualizarCarrito() {
     let suma = carritoDeCompras.reduce((acc, el) => acc + el.precio, 0)
 
     console.log('la suma total de su Carrito es $' + suma)
-}
+}*/
 
     
 
