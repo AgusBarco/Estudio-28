@@ -74,7 +74,7 @@ console.log(buscar);*/
 
 const Formulario = document.querySelector("#Formulario");
 
-Formulario.addEventListener("Submit",(e) => {
+Formulario.addEventListener("submit",(e) => {
     e.preventDefault();
     let texto =document.querySelector("#texto").value;
     let mail =document.querySelector("#mail").value;
