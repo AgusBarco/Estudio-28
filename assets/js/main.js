@@ -80,6 +80,8 @@ Formulario.addEventListener("submit",(e) => {
     let mail =document.querySelector("#mail").value;
     let telefono =document.querySelector("#telefono").value;
 
+
+localStorage.setItem("datos",JSON.stringify (Formulario));
     console.log(texto,mail,telefono)
 })
 
