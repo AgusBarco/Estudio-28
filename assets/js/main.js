@@ -71,7 +71,6 @@ let busquedaUsuario= prompt ("Que buscas?");
 let buscar = listaProductos.find (producto=>producto.nombre == busquedaUsuario);
 console.log(buscar);*/
 
-
 const Formulario = document.querySelector("#Formulario");
 
 Formulario.addEventListener("submit",(e) => {
@@ -79,11 +78,17 @@ Formulario.addEventListener("submit",(e) => {
     let texto =document.querySelector("#texto").value;
     let mail =document.querySelector("#mail").value;
     let telefono =document.querySelector("#telefono").value;
-
-
-localStorage.setItem("datos",JSON.stringify (Formulario));
+   
+    let datos ={
+        texto: texto,
+        mail: mail,
+        telefono: telefono,
+    }
+ 
+    localStorage.setItem("datos",JSON.stringify (datos));
     console.log(texto,mail,telefono)
 })
+
 
 
 
