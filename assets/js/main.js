@@ -87,29 +87,10 @@ Formulario.addEventListener("submit",(e) => {
  
     localStorage.setItem("datos",JSON.stringify (datos));
     console.log(texto,mail,telefono)
+    Swal.fire("Se enviaron tus datos correctamente")
 })
 
 
-
-
-/*INTENTO #2 PARA EVENTOS
-const Formulario = document.getElementById("Formulario");
-
-Formulario.addEventListener("boton", (e) => {
-    e.preventDefault();
-    console.log("Formulario");}
-);*/
-
-
-
-/*INTENTO #1 PARA EVENTOS
-let formulario =document.getElementById(container);
-formulario.addEventListener ("submit",validarFormulario);
-
-boton.onclick = (e)=>{
-    e.preventDefault(),
-    console.log
-}*/
 
 
 /*let Productos = [
