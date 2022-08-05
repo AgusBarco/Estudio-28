@@ -1,7 +1,3 @@
-/*for(let i = 1;i < 10 ; i++)
-{let nombre = prompt ("ingrese un nombre")
-console.log("Turno numero: " + i + "Nombre: "+ nombre)}*/
-
 
 /*let pregunta = parseInt(prompt('¿Que productos quiere llevar?  1-Cuadro 2-Cuadro 3-Cuadro 4-Cuadro, Digite 0 para salir'))
 let cantidad= 0
