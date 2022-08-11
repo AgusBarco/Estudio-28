@@ -68,9 +68,19 @@ let buscar = listaProductos.find (producto=>producto.nombre == busquedaUsuario);
 console.log(buscar);*/
 
 const Formulario = document.querySelector("#Formulario");
+const  Promesa = document.querySelector("#fetch");
+const  Boton = document.querySelector("boton");
 
-Formulario.addEventListener("submit",(e) => {
+const obtenerDatos = () =>{
+    fetch('datos.texto')
+    .then(response => console.log(response.text))
+}
+
+
+const datosFormulario= []
+Formulario.addEventListener("submit",(e)  => {
     e.preventDefault();
+
     let texto =document.querySelector("#texto").value;
     let mail =document.querySelector("#mail").value;
     let telefono =document.querySelector("#telefono").value;
@@ -80,11 +90,14 @@ Formulario.addEventListener("submit",(e) => {
         mail: mail,
         telefono: telefono,
     }
+    
  
-    localStorage.setItem("datos",JSON.stringify (datos));
-    console.log(texto,mail,telefono)
+    localStorage.setItem("datosFormulario",JSON.stringify ('datos'));
+    console.log(datos)
     Swal.fire("Se enviaron tus datos correctamente")
+
 })
+    
 
 
 
