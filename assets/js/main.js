@@ -68,36 +68,48 @@ let buscar = listaProductos.find (producto=>producto.nombre == busquedaUsuario);
 console.log(buscar);*/
 
 const Formulario = document.querySelector("#Formulario");
-const  Promesa = document.querySelector("#fetch");
-const  Boton = document.querySelector("boton");
 
-const obtenerDatos = () =>{
-    fetch('datos.texto')
-    .then(response => console.log(response.text))
+
+
+
+let todosLosClientes
+if(localStorage.getItem('todosLosClientes')){
+    todosLosClientes = JSON.parse(localStorage.getItem('todosLosClientes'))
+} else {
+    todosLosClientes = []
 }
 
-
-const datosFormulario= []
 Formulario.addEventListener("submit",(e)  => {
     e.preventDefault();
 
-    let texto =document.querySelector("#texto").value;
-    let mail =document.querySelector("#mail").value;
-    let telefono =document.querySelector("#telefono").value;
+    let texto =document.querySelector("#texto");
+    let mail =document.querySelector("#mail");
+    let telefono =document.querySelector("#telefono");
    
     let datos ={
-        texto: texto,
-        mail: mail,
-        telefono: telefono,
+        texto: texto.value,
+        mail: mail.value,
+        telefono: telefono.value,
     }
     
- 
-    localStorage.setItem("datosFormulario",JSON.stringify ('datos'));
-    console.log(datos)
+    todosLosClientes.push(datos) 
+    localStorage.setItem("todosLosClientes",JSON.stringify ('todosLosClientes'));
+    vaciarForm()
+   
+    console.log(todosLosClientes)
+    
+    
     Swal.fire("Se enviaron tus datos correctamente")
 
 })
-    
+const todosLosClientesGuardado = JSON.parse(localStorage.getItem('todosLosClientes'))
+console.log(todosLosClientesGuardado)
+
+const vaciarForm = () => {
+    texto.value = ' '
+    mail.value = ' '
+    telefono.value = ' '
+}
 
 
 
